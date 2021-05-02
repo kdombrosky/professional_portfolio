@@ -8,6 +8,7 @@
     --link-color: #009688;
     --text-color: #adadad;
     --background-color: #212121;
+    --header-color: #343434;
 }
 
 body {
@@ -17,12 +18,12 @@ body {
 
 /* Header */ 
 header {
-    padding: 25px 50px;
+    padding: 20px 0 10px 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0;
-    background-image: url("../images/bg_paper.jpg");
+    background-color: var(--header-color);
     background-size: cover;
     background-attachment: fixed;
     z-index: 9999;
@@ -31,18 +32,17 @@ header {
 header h1 a {
     color: var(--text-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin: 0;
-    font-size: 36px;
+    font-size: 38px;
+    border-bottom: 3px dashed var(--link-color);
+    padding-left: 100px;
 }
 
 header a {
     text-decoration: none;
-    color: var(--link-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav {
-    margin: 2px 150px;
+    margin: 40px 250px 0 0;
 }
 
 header nav ul {
@@ -50,12 +50,40 @@ header nav ul {
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
-    align-items: flex-end;
 }
 
 header nav ul li a {
-    padding: 10px 25px;
+    margin: 0 25px;
     font-weight: lighter;
+    color: var(--link-color);
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    border-bottom: 3px dashed var(--text-color);
 }
+
+header nav ul li a:hover {
+    color: var(--text-color);
+    border-bottom: 3px dashed var(--background-color);
+}
+/* End Header Styles */
+
+/* Hero Styles */ 
+.hero {
+    background-color: var(--background-color);
+}
+
+/* End Hero Styles */
+
+/* Work Styles */
+
+/* End Work Styles */ 
+
+/* Resume Styles */
+
+/* End Resume Styles */ 
+
+/* Footer Contact Styles */ 
+.footer {
+    background-color: var(--background-color);
+}
+/* End Footer Contact Styles */ 
