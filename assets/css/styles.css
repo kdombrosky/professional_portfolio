@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --link-color: #009688;
+    --text-color: #adadad;
+    --background-color: #212121;
+}
+
+body {
+    color: var(--text-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header */ 
+header {
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    background-image: url("../images/bg_paper.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 9999;
+}
+
+header h1 a {
+    color: var(--text-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    font-size: 36px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--link-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav {
+    margin: 2px 150px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    align-items: flex-end;
+}
+
+header nav ul li a {
+    padding: 10px 25px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
