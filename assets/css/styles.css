@@ -7,6 +7,8 @@
 :root {
     --text-color: #adadad;
     --accent-color: #009688;
+    --secondary-accent: royalblue;
+    --header-color: #171717;
     --darkest-bg-color: #212121;
     --dark-bg-color: #343434;
 }
@@ -24,18 +26,18 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0;
-    background-color: #171717;
+    background-color: var(--header-color);
     margin: 0;
     box-shadow: 100px 100px 100px rgba(52, 52, 52, 0.70);
 }
 
 header h1 a {
-    color: royalblue;
+    color: var(--secondary-accent);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-size: 40px;
-    padding-left: 100px;
     display: inline-block;
     padding-top: 10px;
+    padding: 10px 0 5px 100px;
     border-bottom: 4px dashed var(--text-color);
 }
 
@@ -65,12 +67,12 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: var(--accent-color);
-    border-bottom: 4px dashed var(--text-color);
+    border-bottom: 4px dashed var(--secondary-accent);
 }
 
 header nav ul li a:active {
-    color: royalblue;
-    border-bottom: 4px dashed var(--accent-color)
+    color: var(--secondary-accent);
+    border-bottom: 4px dashed var(--text-color);
 }
 /* End Header Styles */
 
@@ -85,7 +87,7 @@ header nav ul li a:active {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 100px 0 70px 0;
+    padding: 100px 0 80px 0;
 }
 
 .about {
@@ -154,7 +156,7 @@ header nav ul li a:active {
     color: var(--accent-color);
     font-size: 40px;
     border-bottom: 4px dashed var(--text-color);
-    padding:0 400px 20px 0;
+    padding:0 400px 5px 0;
     margin: 0;
 }
 
