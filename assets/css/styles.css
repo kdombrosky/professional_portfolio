@@ -32,9 +32,9 @@ header {
 header h1 a {
     color: var(--text-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    font-size: 38px;
-    border-bottom: 3px dashed var(--link-color);
-    padding-left: 100px;
+    font-size: 40px;
+    border-bottom: 5px dashed var(--background-color);
+    padding-left: 80px;
 }
 
 header a {
@@ -58,12 +58,12 @@ header nav ul li a {
     color: var(--link-color);
     font-size: 1.55vw;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-    border-bottom: 3px dashed var(--background-color);
+    border-bottom: 4px dashed var(--background-color);
 }
 
 header nav ul li a:hover {
     color: var(--text-color);
-    border-bottom: 3px dashed var(--link-color);
+    border-bottom: 4px dashed var(--link-color);
 }
 
 header nav ul li a:active {
