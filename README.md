@@ -1,7 +1,7 @@
 # Kayla Dombrosky Professional Portfolio
 
 ## Purpose
-A website to showcase my bio, projects, and contact information for future collaboration. 
+A website to showcase my goals, projects, and contact information for future collaboration. 
 
 ## Built With
 * HTML
