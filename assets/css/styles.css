@@ -5,15 +5,16 @@
 }
 
 :root {
-    --link-color: #009688;
     --text-color: #adadad;
-    --background-color: #212121;
-    --header-color: #343434;
+    --accent-color: #009688;
+    --darkest-bg-color: #212121;
+    --dark-bg-color: #343434;
 }
 
 body {
     color: var(--text-color);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
 }
 
 /* Header */ 
@@ -24,15 +25,15 @@ header {
     flex-wrap: wrap;
     top: 0;
     background-color: #171717;
-    /*border-bottom: 8px dashed var(--text-color);*/
     margin: 0;
+    box-shadow: 100px 100px 100px rgba(52, 52, 52, 0.70);
 }
 
 header h1 a {
     color: royalblue;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-size: 40px;
-    padding-left: 40px;
+    padding-left: 100px;
     display: inline-block;
     padding-top: 10px;
     border-bottom: 4px dashed var(--text-color);
@@ -43,7 +44,7 @@ header a {
 }
 
 header nav {
-    margin: 40px 80px 0 0;
+    margin: 40px 100px 0 0;
 }
 
 header nav ul {
@@ -54,7 +55,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    margin: 0 30px;
+    margin: 0 35px;
     font-weight: lighter;
     color: var(--text-color);
     font-size: 1.55vw;
@@ -63,13 +64,13 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: var(--link-color);
+    color: var(--accent-color);
     border-bottom: 4px dashed var(--text-color);
 }
 
 header nav ul li a:active {
     color: royalblue;
-    border-bottom: 4px dashed var(--link-color)
+    border-bottom: 4px dashed var(--accent-color)
 }
 /* End Header Styles */
 
@@ -80,11 +81,11 @@ header nav ul li a:active {
 
 /* Hero Styles */ 
 .hero {
-    background-color: var(--background-color);
+    background-color: var(--darkest-bg-color);
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 100px 0;
+    padding: 100px 0 70px 0;
 }
 
 .about {
@@ -95,8 +96,7 @@ header nav ul li a:active {
     padding: 100px;
     background-image: url("../images/bg_paper.jpg");
     background-size: cover;
-    background-position: center;
-    border: 10px dashed var(--link-color);
+    border: 10px dashed var(--accent-color);
 }
 
 .about img {
@@ -139,6 +139,45 @@ header nav ul li a:active {
 /* End Hero Styles */
 
 /* Work Styles */
+.work {
+    background-color: var(--darkest-bg-color);
+    padding: 20px 0;
+    width: 100%;
+}
+
+.section-title { 
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.work h2 {
+    color: var(--accent-color);
+    font-size: 40px;
+    border-bottom: 4px dashed var(--text-color);
+    padding:0 400px 20px 0;
+    margin: 0;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    justify-content: space-evenly;
+
+}
+
+.project_main {
+    padding: 100px;
+    width: 50%;
+    height: 50%;
+}
+
+.project_square {
+    width: 10%;
+    height: 10%;
+    justify-content: center;
+}
+
 
 /* End Work Styles */ 
 
@@ -148,8 +187,30 @@ header nav ul li a:active {
 
 /* Footer Contact Styles */ 
 .footer {
-    /*border-top: 10px dashed var(--link-color);*/
-    background-color: var(--background-color);
+    /*border-top: 10px dashed var(--accent-color);*/
+    background-color: var(--darkest-bg-color);
     padding: 200px 0;
 }
 /* End Footer Contact Styles */ 
+
+
+/* MEDIA QUERY for Smaller Desktop Screens and Smaller */ 
+@media screen and (max-width: 1200px) {
+    header {
+        padding-bottom: 0;
+    }
+    
+    header h1 a {
+        padding: 0 15px;
+        justify-content: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    header nav ul li a {
+        font-size: 20px;
+
+}
