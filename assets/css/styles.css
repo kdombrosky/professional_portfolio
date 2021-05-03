@@ -18,7 +18,7 @@ body {
 
 /* Header */ 
 header {
-    padding: 20px 0 10px 0;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -58,20 +58,64 @@ header nav ul li a {
     color: var(--link-color);
     font-size: 1.55vw;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-    border-bottom: 3px dashed var(--text-color);
+    border-bottom: 3px dashed var(--background-color);
 }
 
 header nav ul li a:hover {
     color: var(--text-color);
-    border-bottom: 3px dashed var(--background-color);
+    border-bottom: 3px dashed var(--link-color);
+}
+
+header nav ul li a:active {
+    color: var(--background-color);
 }
 /* End Header Styles */
+
+/* Utility Classes */
+.flex-row {
+    display: flex;
+}
 
 /* Hero Styles */ 
 .hero {
     background-color: var(--background-color);
+    width: 100%;
 }
 
+.hero h2 {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 30px 0;
+    font-weight: lighter;
+    font-size: 1.7vw;
+    border-bottom: 10px dashed var(--link-color);
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 100px 300px;
+    border-bottom: 10px dashed var(--link-color);
+}
+
+.about img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    border: 1rem solid rgba(0, 0, 0, 0.35);
+}
+
+.bio {
+    display: flex;
+    font-size: 1.25vw;
+    align-items: center;
+    padding: 20px 30px;
+    text-align: right;
+}
 /* End Hero Styles */
 
 /* Work Styles */
@@ -85,5 +129,6 @@ header nav ul li a:hover {
 /* Footer Contact Styles */ 
 .footer {
     background-color: var(--background-color);
+    padding: 200px 0;
 }
 /* End Footer Contact Styles */ 
