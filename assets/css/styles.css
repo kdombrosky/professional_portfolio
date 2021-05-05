@@ -28,7 +28,6 @@ header {
     top: 0;
     background-color: var(--header-color);
     margin: 0;
-    box-shadow: 100px 100px 100px rgba(52, 52, 52, 0.70);
 }
 
 header h1 a {
@@ -102,7 +101,7 @@ header nav ul li a:active {
 }
 
 .about img {
-    width: 25%;
+    width: 30%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
     border: 1rem solid rgba(52, 52, 52, 0.30);
 }
@@ -121,35 +120,44 @@ header nav ul li a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .color_1 {
     padding: 40px;
+    flex: 1;
     background-color: slategray;
 }
 
 .color_2 {
     padding: 40px;
+    flex: 1;
     background-color: steelblue;
 }
 
 .color_3 {
     padding: 40px;
+    flex: 1;
     background-color:royalblue;
 }
+
+.space {
+    padding: 40px;
+    flex: 1;
+}
 /* End Hero Styles */
+
+/* Section Titles */ 
+.section-title { 
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 /* Work Styles */
 .work {
     background-color: var(--darkest-bg-color);
     padding: 20px 0;
     width: 100%;
-}
-
-.section-title { 
-    display: flex;
-    flex-direction: row-reverse;
 }
 
 .work h2 {
@@ -160,24 +168,24 @@ header nav ul li a:active {
     margin: 0;
 }
 
-.projects {
+.flex-grid {
+    width: 100%;
     display: flex;
-    flex-wrap: nowrap;
-    width: 80%;
-    justify-content: space-evenly;
-
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project_main {
     padding: 100px;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
 }
 
-.project_square {
-    width: 10%;
-    height: 10%;
-    justify-content: center;
+.projects {
+    width: 100%;
+}
+.project {
+    flex: 1;
 }
 
 
