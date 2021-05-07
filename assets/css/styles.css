@@ -138,6 +138,7 @@ header nav ul li a:active {
 
 .container img {
     width: 55%;
+    height: 55%;
 }
 
 .container p {
@@ -219,6 +220,7 @@ header nav ul li a:active {
 
     .container img {
         width: 75%;
+        height: 75%;
         padding: 20px 0;
     }
 
@@ -233,6 +235,7 @@ header nav ul li a:active {
 @media screen and (max-width: 768px) {
 .container img {
     width: 80%;
+    height: 80%;
 }
 
 }
