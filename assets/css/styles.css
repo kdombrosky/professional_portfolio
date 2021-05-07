@@ -6,8 +6,8 @@
 
 :root {
     --text-color: #adadad;
-    --accent-color: #009688;
-    --secondary-accent: royalblue;
+    --accent-color: #c4cdac;
+    --secondary-accent: #11335e;
     --header-color: #171717;
     --darkest-bg-color: #212121;
     --dark-bg-color: #343434;
@@ -19,29 +19,35 @@ body {
     /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
 }
 
-/* Header */ 
+/* Header / Nav Bar Styles  */ 
 header {
     padding: 20px 0;
+    background-color: var(--header-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
-    background-color: var(--header-color);
+    background-image: url("../images/landing_bg.png");
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0;
+    z-index: 9999;
+    background-position: center;
 }
 
-header h1 a {
-    color: var(--secondary-accent);
+header h1 {
+    color: var(--text-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-size: 40px;
-    display: inline-block;
-    padding-top: 10px;
+    font-weight: bold;
     padding: 10px 0 5px 100px;
-    border-bottom: 4px dashed var(--text-color);
 }
 
 header a {
     text-decoration: none;
+    color: var(--text-color);
 }
 
 header nav {
@@ -56,146 +62,55 @@ header nav ul {
 }
 
 header nav ul li a {
-    margin: 0 35px;
+    padding: 10px 20px;
+    margin: 0 15px;
     font-weight: lighter;
-    color: var(--text-color);
     font-size: 1.55vw;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-    /*border-bottom: 4px dashed var(--text-color);*/
 }
 
 header nav ul li a:hover {
     color: var(--accent-color);
-    border-bottom: 4px dashed var(--secondary-accent);
 }
 
 header nav ul li a:active {
     color: var(--secondary-accent);
-    border-bottom: 4px dashed var(--text-color);
 }
 /* End Header Styles */
 
 /* Utility Classes */
-.flex-row {
-    display: flex;
-}
+
+/* End Utility Classes */
 
 /* Hero Styles */ 
 .hero {
-    background-color: var(--darkest-bg-color);
-    width: 100%;
+    background-image: url("../images/landing_bg.png");
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
-    padding: 100px 0 80px 0;
-}
-
-.about {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 80%;
-    padding: 100px;
-    background-image: url("../images/bg_paper.jpg");
-    background-size: cover;
-    border: 10px dashed var(--accent-color);
+    height: 100vh;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.about img {
-    width: 30%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-    border: 1rem solid rgba(52, 52, 52, 0.30);
+.hero div {
+    font-size: 16px;
+    margin: 7%;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-
-.bio {
-    display: flex;
-    font-size: 1.25vw;
-    align-items: center;
-    padding: 20px 30px;
-    text-align: right;
-    background-color: rgba(52,52,52,0.30);
-    
-}
-
-.palette {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 300px;
-    width: 200px; 
-    padding: 0;
-    align-items: center;
-}
-
-.color {
-    width: 40px; 
-    height: 40px;
-    background-color: slategray;
-}
-
-.color:nth-child(2) {
-
-    background-color: steelblue;
-}
-
-.color:nth-child(3) {
-
-    background-color:royalblue;
-}
-
-/* .space {
-    padding: 40px;  
-    width: 40px; 
-    height: 40px;
-    flex: 1;
-} */
-
 /* End Hero Styles */
 
+/* About Me Styles */ 
+
+/* End About Me Styles */
+
 /* Section Titles */ 
-.section-title { 
-    display: flex;
-    flex-direction: row-reverse;
-}
+
 
 /* Work Styles */
-.work {
-    background-color: var(--darkest-bg-color);
-    padding: 20px 0;
-    width: 100%;
-}
-
-.work h2 {
-    color: var(--accent-color);
-    font-size: 40px;
-    border-bottom: 4px dashed var(--text-color);
-    padding:0 400px 5px 0;
-    margin: 0;
-}
-
-.flex-grid {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.project_main {
-    width: 80%;
-}
-.project_main a img {
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.projects {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.project {
-    flex: 1;
-}
 
 
 /* End Work Styles */ 
@@ -208,7 +123,7 @@ header nav ul li a:active {
 .footer {
     /*border-top: 10px dashed var(--accent-color);*/
     background-color: var(--darkest-bg-color);
-    padding: 200px 0;
+    padding: 100px 0;
 }
 /* End Footer Contact Styles */ 
 
