@@ -219,7 +219,7 @@ header nav ul li a:active {
 
     .container img {
         width: 75%;
-        padding: 20px;
+        padding: 20px 0;
     }
 
     .container p {
@@ -243,9 +243,13 @@ header nav ul li a:active {
     .hero div {
         padding-top: 50px;
     }
+
+    .section-title {
+        width: 80%;
+    }
     
     .container {
-        padding: 15px;
+        padding: 20px 0;
     }
 
 
