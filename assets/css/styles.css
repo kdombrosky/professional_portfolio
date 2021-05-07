@@ -6,11 +6,10 @@
 
 :root {
     --text-color: #adadad;
-    --accent-color: #c4cdac;
-    --secondary-accent: #11335e;
-    --header-color: #171717;
-    --darkest-bg-color: #212121;
-    --dark-bg-color: #343434;
+    --accent-color: #a8a446;
+    --secondary-accent: #225aa5;
+    --bg-color: #212121;
+    --second-bg-color: #030a12;
 }
 
 body {
@@ -21,8 +20,8 @@ body {
 
 /* Header / Nav Bar Styles  */ 
 header {
-    padding: 20px 0;
-    background-color: var(--header-color);
+    padding: 20px 70px;
+    background-color: var(--bg-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -42,7 +41,7 @@ header h1 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-size: 40px;
     font-weight: bold;
-    padding: 10px 0 5px 100px;
+    margin: 10px 0;
 }
 
 header a {
@@ -51,7 +50,7 @@ header a {
 }
 
 header nav {
-    margin: 40px 100px 0 0;
+    margin-top: 40px;
 }
 
 header nav ul {
@@ -71,16 +70,14 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: var(--accent-color);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
 }
 
 header nav ul li a:active {
     color: var(--secondary-accent);
 }
 /* End Header Styles */
-
-/* Utility Classes */
-
-/* End Utility Classes */
 
 /* Hero Styles */ 
 .hero {
@@ -90,7 +87,7 @@ header nav ul li a:active {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 90vh;
     align-items: flex-start;
     background-repeat: no-repeat;
     background-position: center;
@@ -98,13 +95,57 @@ header nav ul li a:active {
 
 .hero div {
     font-size: 16px;
+    font-weight: lighter;
     margin: 7%;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 /* End Hero Styles */
 
-/* About Me Styles */ 
+/* Utility Classes */
+.section-title {
+    font-size: 50px;
+    color: var(--text-color);
+    text-align: center;
+    border-bottom: 5px dashed var(--secondary-accent);
+    padding-bottom: 25px;
+    margin: 0 auto 100px auto;
+    width: 30%;
+}
+/* End Utility Classes */
 
+/* About Me Styles */ 
+.about-me {
+    background-color: black;
+    padding: 100px 0;
+}
+
+/* might use later to center content
+.container > * {
+    flex: 1;
+} */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 150px;
+}
+
+.container div {
+    display: flex;
+    justify-content: center;
+}
+
+.container img {
+    width: 55%;
+}
+
+.container p {
+    color: var(--accent-color);
+    font-size: 20px;
+    line-height: 1.3;
+    width: 75%;
+}
 /* End About Me Styles */
 
 /* Section Titles */ 
@@ -122,29 +163,90 @@ header nav ul li a:active {
 /* Footer Contact Styles */ 
 .footer {
     /*border-top: 10px dashed var(--accent-color);*/
-    background-color: var(--darkest-bg-color);
+    background-color: var(--bg-color);
     padding: 100px 0;
 }
 /* End Footer Contact Styles */ 
 
 
-/* MEDIA QUERY for Smaller Desktop Screens and Smaller */ 
-@media screen and (max-width: 1200px) {
+/* MEDIA QUERY for smaller desktop screens and smaller */ 
+@media screen and (max-width: 1030px) {
+    /*landing page*/
     header {
         padding-bottom: 0;
+        justify-content: center;
+        position: relative;
     }
     
-    header h1 a {
-        padding: 0 15px;
-        justify-content: center;
+    header h1 {
+        margin: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav {
+        margin: 30px;
     }
 
     header nav ul {
         margin-top: 20px;
         width: 100%;
+        justify-content: center;
     }
     
     header nav ul li a {
         font-size: 20px;
+        text-align: center;
     }
+
+    .hero div {
+        margin: 6%; 
+    }
+    /*end landing page*/ 
+    /*about me*/
+    .section-title {
+        margin: 0 auto;
+        width: 50%;
+    }
+    .about-me {
+        padding: 30px;
+    }
+    .container {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .container img {
+        width: 75%;
+        padding: 20px;
+    }
+
+    .container p {
+        text-align: center;
+    }
+
+}
+
+
+/* MEDIA QUERY for tablets and smaller */
+@media screen and (max-width: 768px) {
+.container img {
+    width: 80%;
+}
+
+}
+
+
+/* MEDIA QUERY for mobile phones and smaler */
+@media screen and (max-width: 575px) {
+    .hero div {
+        padding-top: 50px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+
+
 }
