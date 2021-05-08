@@ -88,6 +88,7 @@ header nav ul li a:active {
     justify-content: center;
     flex-wrap: wrap;
     height: 90vh;
+    width: auto;
     align-items: flex-start;
     background-repeat: no-repeat;
     background-position: center;
@@ -199,6 +200,8 @@ header nav ul li a:active {
         font-size: 20px;
         text-align: center;
     }
+
+    
 
     .hero div {
         margin: 6%; 
