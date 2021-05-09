@@ -108,10 +108,18 @@ header nav ul li a:active {
     font-size: 44px;
     color: var(--text-color);
     text-align: center;
-    border-bottom: 5px dashed var(--secondary-accent);
+    border-bottom: 5px dashed;
     padding-bottom: 25px;
     margin: 0 auto 100px auto;
     width: 30%;
+}
+
+.primary-border {
+    border-color: var(--secondary-accent);
+}
+
+.secondary-border {
+    border-color: var(--accent-color);
 }
 /* End Utility Classes */
 
@@ -157,15 +165,6 @@ header nav ul li a:active {
     padding: 100px;
 }
 
-/*work div h2 {
-    background-color: var(--third-bg-color);
-    font-size: 44px;
-    text-align: center;
-    padding: 20px;
-    border-bottom: 4px dashed var(--second-bg-color);
-    margin: 0 10px 100px 10px;
-}*/
-
 .projects-container {
     display: flex;
     justify-content: center;
@@ -182,8 +181,33 @@ header nav ul li a:active {
 
 .project {
     position: relative;
-    height: 352px; 
-    overflow: hidden;
+    display: inline-block;
+}
+
+.project img {
+    display: block;
+    height: 344px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.tag {
+    position: absolute;
+    top: 70%;
+    left: 2px;
+    transform: translate(0, -50%); 
+    text-align: left; 
+    z-index: 10;
+    color: var(--accent-color);
+    background-color: rgba(46, 44, 44, 0.75);
+    font-size: 22px;
+    padding: 20px 40px;
+}
+
+.blur img {
+    filter: blur (300px);
+}
+
+.project img a:hover{
 }
 
 /* End Work Styles */ 
