@@ -230,7 +230,7 @@ header nav ul li a:active {
 /* End Resume Styles */ 
 
 /* Footer Contact Styles */ 
-.footer {
+footer {
     background-color: var(--bg-color);
     padding: 75px 100px;
     display: flex;
@@ -246,7 +246,7 @@ header nav ul li a:active {
     align-items: center;
 }
 
-.footer h2 {
+.test {
     font-size: 30px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -254,20 +254,19 @@ header nav ul li a:active {
     color: var(--secondary-accent);
 }
 
-.footer h3 {
+footer h3 {
     border-bottom: 2px solid var(--accent-color);
 }
 
-.footer p a {
+footer p a {
     text-decoration: none;
     color: var(--text-color);
 }
 
-.footer p {
+footer p {
     border-bottom: 2px solid var(--accent-color);
     
 }
-
 /* End Footer Contact Styles */ 
 
 
@@ -362,9 +361,9 @@ header nav ul li a:active {
     }
     /*end work*/
     /*footer*/
-    .footer {
+    footer {
         position: relative;
-        padding: 20px 50px;
+        padding: 2rem;
     }
 
     
@@ -373,10 +372,26 @@ header nav ul li a:active {
 
 /* MEDIA QUERY for tablets and smaller */
 @media screen and (max-width: 820px) {
-.projects-container {
+    .projects-container {
     padding-top: 1rem;
-}
+    }
 
+    footer {
+        justify-content: space-around;
+    }
+
+    footer h2 {
+        text-align: center;
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    footer h3 {
+        padding: 1rem;
+    }
+    footer p {
+        padding: 1rem;
+    }
 }
 
 
@@ -393,6 +408,4 @@ header nav ul li a:active {
     .container {
         padding: 20px 0;
     }
-
-
 }
