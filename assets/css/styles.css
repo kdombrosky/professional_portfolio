@@ -373,7 +373,9 @@ header nav ul li a:active {
 
 /* MEDIA QUERY for tablets and smaller */
 @media screen and (max-width: 820px) {
-
+.projects-container {
+    padding-top: 1rem;
+}
 
 }
 
