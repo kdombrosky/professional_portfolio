@@ -292,8 +292,6 @@ header nav ul li a:active {
         text-align: center;
     }
 
-    
-
     .hero div {
         margin: 6%; 
     }
@@ -321,7 +319,20 @@ header nav ul li a:active {
     .container p {
         text-align: center;
     }
+    /*end about me*/
+    /*work*/
+    .project img {
+        filter: blur(1px);
+        transition: filter 300ms;
+    }
+    /*end work*/
+    /*footer*/
+    .footer {
+        position: relative;
+        padding: 20px 50px;
+    }
 
+    
 }
 
 
