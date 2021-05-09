@@ -10,6 +10,7 @@
     --secondary-accent: #225aa5;
     --bg-color: #212121;
     --second-bg-color: #030a12;
+    --third-bg-color: #12325d;
 }
 
 body {
@@ -104,7 +105,7 @@ header nav ul li a:active {
 
 /* Utility Classes */
 .section-title {
-    font-size: 50px;
+    font-size: 44px;
     color: var(--text-color);
     text-align: center;
     border-bottom: 5px dashed var(--secondary-accent);
@@ -150,11 +151,40 @@ header nav ul li a:active {
 }
 /* End About Me Styles */
 
-/* Section Titles */ 
-
-
 /* Work Styles */
+.work {
+    background-color: var(--third-bg-color);
+    padding: 100px;
+}
 
+/*work div h2 {
+    background-color: var(--third-bg-color);
+    font-size: 44px;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px dashed var(--second-bg-color);
+    margin: 0 10px 100px 10px;
+}*/
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--third-bg-color);
+    width: 900px;
+    gap: 15px;
+}
+
+.project {
+    position: relative;
+    height: 352px; 
+    overflow: hidden;
+}
 
 /* End Work Styles */ 
 
