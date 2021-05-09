@@ -223,8 +223,42 @@ header nav ul li a:active {
 .footer {
     /*border-top: 10px dashed var(--accent-color);*/
     background-color: var(--bg-color);
-    padding: 100px;
+    padding: 75px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    bottom: 0;
+    background-image: url("../images/landing_bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    z-index: 9999;
+    background-position: center;
+    align-items: center;
 }
+
+.footer h2 {
+    font-size: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: var(--secondary-accent);
+}
+
+.footer h3 {
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.footer p a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.footer p {
+    border-bottom: 2px solid var(--accent-color);
+    
+}
+
 /* End Footer Contact Styles */ 
 
 
