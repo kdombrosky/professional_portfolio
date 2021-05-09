@@ -20,7 +20,7 @@ body {
 }
 
 /* Header / Nav Bar Styles  */ 
-header {
+header { 
     padding: 20px 70px;
     background-color: var(--bg-color);
     display: flex;
@@ -83,8 +83,8 @@ header nav ul li a:active {
 /* Hero Styles */ 
 .hero {
     background-image: url("../images/landing_bg.png");
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: cover; /**/
+    background-attachment: fixed; /**/
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -108,18 +108,23 @@ header nav ul li a:active {
     font-size: 40px;
     color: var(--text-color);
     text-align: center;
-    border-bottom: 3px dashed;
     padding-bottom: 20px;
     margin: 0 auto 100px auto;
     width: 30%;
 }
 
-.primary-border {
-    border-color: var(--secondary-accent);
+.primary-border { 
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--accent-color);
 }
 
-.secondary-border {
-    border-color: var(--accent-color);
+.secondary-border { 
+    background-color: rgba(94, 93, 100, 0.35);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--text-color-color);
 }
 /* End Utility Classes */
 
@@ -165,10 +170,6 @@ header nav ul li a:active {
     padding: 100px;
 }
 
-.flex-row {
-    display: flex;
-    justify-content: center;
-}
 .projects-container {
     display: flex;
     justify-content: center;
