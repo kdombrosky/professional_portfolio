@@ -8,7 +8,7 @@ A website to showcase my goals, projects, and contact information for future col
 * CSS
 
 ## Website
-https://kdombrosky.github.io/professional-portfolio/
+https://kdombrosky.github.io/professional_portfolio/
 
 ## Contribution
 Made by Kayla Dombrosky
